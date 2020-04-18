@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="Big5">
+<meta http-equiv="Content-Type" content="text/html; charset=Big5">
+<title>小廚當家</title>
+<link href="css/cooking.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('images/bt_hover_02.jpg','images/bt_hover_03.jpg')">
+<div id="bg"><img src="images/index.jpg" width="1920" height="2258" class="bgimg" align="top" /><img src="images/index_s.jpg" alt="" width="480" height="2036"/ class="bgsimg" align="top"></div>
+<div id="bt">
+<a href="kazi.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('bt1','','images/bt_hover_02.jpg',1)"><img src="images/bt_02.jpg" alt="" width="959" height="761" id="bt1"></a>
+<div class="clear"></div>
+<a href="forever.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('bt2','','images/bt_hover_03.jpg',1)"><img src="images/bt_03.jpg" alt="" width="961" height="760" id="bt2"></a></div>
+<div class="clearfix"></div>
+<div id="footer"><a href="http://www.dondom.com.tw" target="_blank">www.dondom.com.tw</a></div>
+</body>
+</html>

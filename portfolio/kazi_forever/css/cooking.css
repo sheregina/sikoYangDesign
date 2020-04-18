@@ -1,0 +1,108 @@
+@charset "utf-8";
+* {
+	padding: 0;
+	margin: 0;
+}
+#footer {
+	height: 80px;
+	width: 100%;
+	background-color: #EE6D45;
+	bottom: auto;
+	text-align: center;
+	padding-top: 50px;
+}
+.clearfix {
+	clear: both;
+}
+#footer a {
+	color: #FFFFFF;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size: 1.25em;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+.back {
+	position: fixed;
+	right: 0px;
+	top: 0px;
+}
+
+
+
+
+
+@media screen and (max-width:1920px){
+#bt2 {
+	float: left;
+	width: 50%;
+	height: auto;
+}
+#bt1 {
+	width: 50%;
+	height: auto;
+	float: left;
+}
+
+#bt {
+	width: 100%;
+}
+
+.bgimg {
+	width: 100%;
+	height: auto;
+}
+
+.bgsimg {
+	display: none;
+}
+
+#main img {
+	margin: 10px 40px;
+	width: 23%;
+	height: auto;
+}
+#main {
+	background-color: #EE6D45;
+	padding: 2% 15%;
+	text-align:center;
+}
+
+
+
+}
+
+@media screen and (max-width:1080px){
+.bgimg {
+	display: none;
+}
+.bgsimg {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.clear {
+	clear: both;
+}
+#bt2 {
+	width: 100%;
+	height: auto;
+}
+#bt1 {
+	width: 100%;
+	height: auto;
+}
+#main {
+	background-color: #EE6D45;
+	padding:8% ;
+	text-align:center;
+}
+#main img {
+	width: 80%;
+	height: auto;
+	margin: 0;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+}

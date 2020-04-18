@@ -1,0 +1,478 @@
+@charset "utf-8";
+* {
+	padding: 0px;
+	margin: 0px;
+}
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+	width: auto;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+/* Mobile Layout: 480px and below. */
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	clear: none;
+	float: none;
+}
+#wapper {
+	width: 100%;
+	height: 100%;
+}
+nav {
+	float: right;
+	margin-top: 21px;
+	margin-right: 42px;
+}
+#logo {
+	width: 195px;
+	float: left;
+	margin-left: 5%;
+	margin-top: 19px;
+}
+#banner {
+	width: 400px;
+	position: fixed;
+	bottom: 10%;
+	right: 5%;
+}
+#content {
+	background-repeat: no-repeat;
+	float: left;
+	margin-top: 20px;
+	padding-left: 5%;
+}
+#content h1 {
+	color: #151515;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-size: 57px;
+	font-weight: 400;
+	margin-top: 130px;
+}
+#content h2 {
+	color: #222222;
+	font-family: "新細明體";
+	font-size: 28px;
+	font-style: normal;
+}
+.line {
+	width: 27px;
+	height: 1px;
+	background-color: #222222;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.zeroMargin_mobile {
+margin-left: 0;
+}
+.hide_mobile {
+display: none;
+}
+#banner p {
+	margin-bottom: 5px;
+}
+.bg {
+	position: fixed;
+	top: 92px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -999;
+}
+.bg img{
+	min-height: 100%;
+    width: 100%;
+	min-width: 1000px;
+}
+#nav {
+	background-color: #FFFFFF;
+	padding-bottom: 20px;
+}
+body {
+	background-image: url(../image/bg.gif);
+}
+.clear {
+	clear: both;
+}
+#footer {
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	bottom: 0px;
+	border-top: 1px solid #515151;
+	background-image: url(../image/bg.gif);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#footer p {
+	font-family: "微軟正黑體", Calibri;
+	font-size: 14px;
+	margin-top: 17px;
+	margin-left: 45px;
+	line-height: 20px;
+	letter-spacing: 1px;
+}
+.tittle {
+	margin-bottom: 100px;
+	margin-top: 60px;
+}
+
+/* ABOUT  */
+#aboutcontent {
+	height: 100%;
+	padding-bottom: 85px;
+}
+#content_left {
+	width: 38%;
+	float: left;
+}
+#aboutcontent h2 {
+	font-size: 26px;
+	line-height: 31px;
+	font-weight: normal;
+	letter-spacing: 3.5px;
+	font-family: "微軟正黑體", Calibri;
+}
+.contenttext {
+	font-size: 16px;
+	font-family: "微軟正黑體", Calibri;
+	letter-spacing: 0.15em;
+	line-height: 24px;
+	margin-top: 40px;
+}
+#content_right {
+	width: 48%;
+	float: right;
+	margin-top: 60px;
+	margin-right: 3%;
+}
+.auto {
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	background-attachment: scroll;
+	z-index: 1;
+	overflow: hidden;
+}
+#right_line {
+	border-left: 1px solid #4A4A4A;
+	padding-left: 20px;
+}
+/* ABOUT END  */
+
+/* WORKS  */
+#workscontent {
+	height: 100%;
+	padding-bottom: 106px;
+	position: relative;
+}
+.workslist {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.newsbg {
+	width: 51%;
+	z-index: -178;
+	opacity: 0.8;
+	top: 0px;
+	position: fixed;
+	bottom: auto;
+	left: auto;
+	overflow-y: hidden;
+}
+.newsbg img {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: auto;
+	min-width: 1000px;
+}
+
+#workscontent h3 {
+	color:#7C0917;
+	font-size: 26px;
+	line-height: 25px;
+	font-weight: normal;
+	letter-spacing: 3.5px;
+	font-family: "微軟正黑體", Calibri;
+}
+.workstext {
+	font-size: 16px;
+	font-family: "微軟正黑體", Calibri;
+	letter-spacing: 0.15em;
+	line-height: 24px;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+.btn-default {
+	padding: 6px 12px;
+	color: #878787;
+	background-color: rgba(135,135,135,0.00);
+	border:1px solid transparent;
+	border-color: #878787;
+	border-radius: 4px;
+	font-family: "微軟正黑體", Calibri;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+	color: #fff;
+	background-color: #878787;
+	border-color: #878787;
+    }
+
+/* WORKS END  */
+
+/* NEWS  */
+#newscontent {
+	padding-bottom: 100px;
+	width: 100%;
+	float: left;
+}
+.newstittle {
+	margin-bottom: 100px;
+	margin-top: 60px;
+	float: left;
+}
+.newstext   {
+	width: 505px;
+	padding-top: 70px;
+}
+.news {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	padding-bottom: 15px;
+}
+.rightimg {
+	/* [disabled]z-index: -2; */
+	float: left;
+	text-align: right;
+	width: 50%;
+	margin-top: 60px;
+	height: 580px;
+	margin-left: 30px;
+	overflow-x: hidden;
+	max-width: 660px;
+}
+.rightimg img {
+	max-width: none;
+
+
+}
+.newstext h3 {
+	font-family: "微軟正黑體", Calibri;
+	font-size: 22px;
+	color: #7C0917;
+}
+.newstext p {
+	font-family: "微軟正黑體", Calibri;
+	font-size: 18px;
+	margin-top: 15px;
+	letter-spacing: 1.5px;
+	line-height: 25px;
+}
+/* NEWS END */
+
+/* CONTANT */
+.contittle {
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+#contact {
+	width: 450px;
+	background-color: #FFFFFF;
+	margin-left: 50px;
+	margin-top: 2%;
+	z-index: 9;
+	margin-bottom: 85px;
+	position: relative;
+}
+.sent {
+	width: 100px;
+	height: 36px;
+	font-family: "微軟正黑體", Calibri;
+	background-color: #F75C50;
+	border-radius: 0.3em;
+	border-width: 0px;
+	color: #FFFFFF;
+	display: block;
+	margin-left: auto;
+	margin-right: 50px;
+	margin-bottom: 10px;
+}
+#contact form {
+	margin-left: 20px;
+}
+iframe {
+	position: absolute;
+	top: 88px;
+	left: 0px;
+	right: 0px;
+	z-index: 0;
+}
+.worksinside {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#newsL {
+	float: left;
+}
+#newsimgs img {
+	margin-right: 7px;
+}
+#newsimgs {
+	margin-top: 40px;
+}
+
+
+
+
+
+/* CONTANT END */
+
+@media screen and (max-width: 1000px) {
+    img.bg {
+                left: 50%;
+                margin-left: -500px;
+            }
+}
+
+
+
+
+
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media screen and (max-width: 400px) {
+
+.gridContainer {
+	width: 100%;
+	clear: none;
+	float: none;
+}
+#logo {
+	width: 198px;
+}
+#content {
+}
+#apdiv1 {
+width: 100%;
+}
+* {
+	padding: 0px;
+	margin: 0px;
+}
+nav {
+	margin-top: 21px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+#content h1 {
+	color: #151515;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-size: 38px;
+	font-weight: 400;
+	margin-top: 58px;
+}
+#banner {
+	width: 400px;
+	position: absolute;
+	bottom: 10%;
+	right: 5%;
+	display: none;
+}
+.hide_tablet {
+display: none;
+}
+.zeroMargin_tablet {
+margin-left: 0;
+}
+
+
+
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media screen and (max-width:769px) and (min-width:401px){
+
+.gridContainer {
+	width: 100%;
+	padding-left: 0%;
+	padding-right: 0%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#logo {
+	margin-left: 38%;
+
+}
+#content {
+	height: 100%;
+}
+#banner {
+	width: 400px;
+	position: absolute;
+	bottom: 10%;
+	right: 5%;
+	display: none;
+}
+.zeroMargin_desktop {
+margin-left: 0;
+}
+.hide_desktop {
+display: none;
+}
+}
